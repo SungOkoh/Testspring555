@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	Hello Spring Boot
+	Hello Spring Boot1234
 </body>
 </html>
