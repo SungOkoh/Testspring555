@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "mybatis-3-mapper.dtd">
+
+	<mapper namespace="com.example.demo.user.UserMapper">
+	<resultMap id="resultMap" type="com.example.demo.user.UserVO">
+		<result property="userNum" column="userNum"></result>
+		<result property="userName" column="userName"></result>
+	</resultMap>
+   <select id="listMap" resultType="com.example.demo.user.UserVO">
+      SELECT * FROM user
+   </select>
+   <insert id="insertMap" parameterType="com.example.demo.user.UserVO">
+   	insert into user values (#{userNum}, #{userName})
+   </insert> 
+</mapper>
